@@ -1,0 +1,7 @@
+
+GET http://127.0.0.1:3000/
+###
+POST http://localhost:3000/api/login HTTP/1.1
+content-type: application/json
+
+{ "email": "konfeta@mail.ru", "password": "12345" }

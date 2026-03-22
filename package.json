@@ -1,0 +1,31 @@
+{
+  "name": "moon_tv_backend",
+  "version": "1.0.0",
+  "description": "back_end_for_moon_tv_streaming_service",
+  "keywords": [
+    "streams",
+    "tv"
+  ],
+  "license": "ISC",
+  "author": "Yuliya Zavorokhina",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "clean:all": "rimraf dist && rimraf node_modules && rimraf package-lock.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
